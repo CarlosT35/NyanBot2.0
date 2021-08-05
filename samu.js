@@ -94,7 +94,7 @@ const sleep = async (ms) => {
 }
 ////////////▶ Carlos_T35
 api = 'CONTACTAME PARA OBTENER LA API'
-fak = 'Carlos_T35'
+fak = 'samu330'
 prefix = '.'
 apikey = 'LindowApi'
 hit_today = []
@@ -168,7 +168,7 @@ if (json[2][0][1].live == 'false') charging = false
 console.log(chalk.greenBright("├"), chalk.keyword("magenta")("[ 🔋Nivel de carga de la bateria ]"), chalk.greenBright(batterylevel+'%'), chalk.keyword("cyan")("Esta cargando?"), chalk.keyword("yellow")(charging))	
 })
 ////////////▶ Carlos_T35
-Carlos_T35.on('blocklist-update', async (chat) => {
+samu330.on('blocklist-update', async (chat) => {
 for (i of chat.added){
 target = i.replace('@c.us', '@s.whatsapp.net')
 blocked.push(target)
@@ -181,7 +181,7 @@ console.log(chalk.greenBright("├"), chalk.keyword("green")("[ NUEVO USUARIO DE
 }
 })
 ////////////▶ Carlos_T35
-Carlos_T35.on('group-update', async(chat) => {
+samu330.on('group-update', async(chat) => {
 var donde = chat.jid
 var group = await Carlos_T35.groupMetadata(donde)
 if (!chat.desc == '') {
@@ -226,7 +226,7 @@ pushnem = sam.key.fromMe ? samu330.user.name : conts.notify || conts.vname || co
 pushnem = num.split('@')[0]
 }
 try {
-ppimg = await Carlos_T35.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+ppimg = await samu330.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 } catch {
 ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 }
